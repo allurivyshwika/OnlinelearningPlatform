@@ -1,0 +1,6 @@
+OnlineLearningPlatform/
+├── frontend/
+├── backend/
+└── database/
+    ├── schema.sql
+    └── sample_data.sql
