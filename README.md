@@ -5,6 +5,10 @@ Spring Data JPA, and MySQL. Students can browse courses, enroll, track course
 progress, and take quizzes. Instructors manage their courses and quizzes, while
 administrators manage accounts, course assignments, and catalog categories.
 
+The active application is under `OnlineLearningPlatform/`. The earlier starter
+project at the repository root (`backend/`, `frontend/`, and `database/`) is
+retained; GitHub Pages deploys the frontend from the active application.
+
 > **Implementation status:** This README describes the complete project goal
 > and identifies which features are implemented in the current codebase.
 > Lesson delivery, lesson-level progress, course search and filters, profile
