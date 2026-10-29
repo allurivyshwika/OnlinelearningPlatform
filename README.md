@@ -395,8 +395,11 @@ The GitHub Actions workflow builds and publishes the React frontend from
 The Vite configuration supports the repository's Pages subpath, and a
 not-found fallback keeps the app's client-side login routes available.
 
-The repository is public. The workflow enables GitHub Pages on its first run
-and publishes the frontend using the repository-specific Pages URL.
+The repository is public. Before the first deployment, an account with
+repository admin access must enable Pages under **Settings → Pages** and choose
+**GitHub Actions** as the build and deployment source. The workflow cannot
+create the Pages site because GitHub does not grant that permission to its
+Actions token.
 
 This deployment hosts only the frontend. The Spring Boot API and MySQL database
 are not hosted by GitHub Pages, so course loading, registration, login,
