@@ -3,5 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.GITHUB_ACTIONS === "true" ? "/Online_learning_Platform/" : "/",
+  base: process.env.GITHUB_ACTIONS === "true" ? "/OnlinelearningPlatform_fsd/" : "/",
 });

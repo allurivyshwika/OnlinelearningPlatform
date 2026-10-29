@@ -395,11 +395,8 @@ The GitHub Actions workflow builds and publishes the React frontend from
 The Vite configuration supports the repository's Pages subpath, and a
 not-found fallback keeps the app's client-side login routes available.
 
-The repository is private. GitHub Pages availability for private repositories
-depends on the account's GitHub plan. Before the first deployment, enable Pages
-under **Settings → Pages** and choose **GitHub Actions** as the build and
-deployment source. The workflow does not attempt to create or enable the Pages
-site automatically because GitHub may deny that operation to the Actions token.
+The repository is public. The workflow enables GitHub Pages on its first run
+and publishes the frontend using the repository-specific Pages URL.
 
 This deployment hosts only the frontend. The Spring Boot API and MySQL database
 are not hosted by GitHub Pages, so course loading, registration, login,
@@ -410,7 +407,7 @@ rerun the workflow. Email password reset will also require SMTP environment
 variables on the backend host.
 
 After a successful deployment, the frontend will be available at:
-`https://allurivyshwika.github.io/Online_learning_Platform/`
+`https://allurivyshwika.github.io/OnlinelearningPlatform_fsd/`
 
 ## Recommended development roadmap
 
