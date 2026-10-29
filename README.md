@@ -396,9 +396,10 @@ The Vite configuration supports the repository's Pages subpath, and a
 not-found fallback keeps the app's client-side login routes available.
 
 The repository is private. GitHub Pages availability for private repositories
-depends on the account's GitHub plan. If the workflow cannot enable Pages,
-enable it under **Settings → Pages**, choose **GitHub Actions** as the build
-and deployment source, and rerun the workflow.
+depends on the account's GitHub plan. Before the first deployment, enable Pages
+under **Settings → Pages** and choose **GitHub Actions** as the build and
+deployment source. The workflow does not attempt to create or enable the Pages
+site automatically because GitHub may deny that operation to the Actions token.
 
 This deployment hosts only the frontend. The Spring Boot API and MySQL database
 are not hosted by GitHub Pages, so course loading, registration, login,
